@@ -67,7 +67,7 @@ $(document).ready(function () {
             $("#show-contact h2").text(newContact.fullName());
             $(".first-name").text(newContact.firstName);
             $(".last-name").text(newContact.secondName);
-            $("#addresses").text("");
+            $("addresses").text("");
             newContact.addresses.forEach(function (address) {
                 $("#addresses").append("<li>" + address.fullAddress() + "</li>");
             });
